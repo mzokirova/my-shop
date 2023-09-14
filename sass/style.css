@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato";
+}
+
+header {
+  background-color: rgb(31, 26, 40);
+}
+header nav {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav a {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 30%;
+  height: 500px;
+  border-radius: 15px;
+  box-shadow: 2px 28px 48px -13px rgb(126, 133, 138);
+  padding: 2em;
+  position: relative;
+}
+.container .card .product-category {
+  border: none;
+  background-color: rgb(228, 181, 120);
+  padding: 0.3em 0.5em;
+  border-radius: 10px;
+  font-weight: 600;
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+.container .card img {
+  width: 70%;
+  max-width: 100%;
+  max-height: 100%;
+  aspect-ratio: 1;
+}
+.container .card .product-name {
+  color: rgb(66, 58, 101);
+  text-overflow: ellipsis;
+}
+.container .card .horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.container .card .horizontal .product-price {
+  font-size: 1.3em;
+}
+.container .card .horizontal .rating {
+  font-size: 1.2em;
+}
+.container .card .horizontal .rating i {
+  color: rgb(249, 222, 102);
+}
+
+@media (max-width: 850px) {
+  .container {
+    width: 95%;
+  }
+  .container .card {
+    width: 40%;
+  }
+}
+@media (max-width: 690px) {
+  .container {
+    width: 98%;
+  }
+  .container .card {
+    width: 60%;
+  }
+}
+@media (max-width: 490px) {
+  .container {
+    width: 100%;
+  }
+  .container .card {
+    padding: 1em;
+    height: 400px;
+  }
+}
+@media (max-width: 350px) {
+  .container .card {
+    width: 70%;
+  }
+}
+@media (max-width: 280px) {
+  .container .card {
+    width: 80%;
+  }
+}/*# sourceMappingURL=style.css.map */
